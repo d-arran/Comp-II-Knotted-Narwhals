@@ -30,8 +30,6 @@ classdef Knot
         function path = optimise(path)
             l = max(max(path));
 
-            [~,id] = sort(path(:,1));
-            path = path(id,:);
             b = zeros(l,2);
             b(:,1) = 1:l;
 
