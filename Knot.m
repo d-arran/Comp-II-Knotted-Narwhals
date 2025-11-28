@@ -16,9 +16,13 @@ classdef Knot
         end
         function obj = w(obj)
             obj.writhe = 0;
-            temp = mod(obj.diagram,obj.crossings*2);
+            L = max(max(obj.diagram));
             for i = 1:obj.crossings
-                if temp(i,2)<temp(i,4)
+                if isequal([obj.diagram(i,2),obj.diagram(i,4)],[L,1])
+                    obj.writhe = obj.writhe-1;
+                elseif isequal([obj.diagram(i,2),obj.diagram(i,4)],[1,L])
+                    obj.writhe = obj.writhe+1;
+                elseif obj.diagram(i,2)<obj.diagram(i,4)
                     obj.writhe = obj.writhe-1;
                 else
                     obj.writhe = obj.writhe+1;
