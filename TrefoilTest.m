@@ -1,3 +1,2 @@
 a = [1,4,2,5;5,2,6,3;3,6,4,1];
 trefoil = Knot(a);
-trefoil 
