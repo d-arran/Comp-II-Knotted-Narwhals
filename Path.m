@@ -20,16 +20,20 @@ classdef Path
                 ref(p(1),p(2)) = 1;
                 ref(p(2),p(1)) = 1;
             end
-            
+            seen = zeros(1,l);
             seeds = zeros(1,l);
             for i = 1:l
-                seeds(i) = mod(sum(ismember(obj.path,i),'all'),2);
+                count = sum(ismember(obj.path,i),'all');
+                if count == 0
+                    seen(i) = 1;
+                elseif mod(count,2) == 1
+                    seeds(i) = 1;
+                end
             end
             
             % Finds all open paths
             L = sum(seeds)/2;
             newpaths = zeros(L,2);
-            seen = zeros(1,l);
             j = 1;
             for i = 1:l
                 t0 = 0;
