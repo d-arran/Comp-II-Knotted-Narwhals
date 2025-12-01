@@ -9,3 +9,5 @@ LoopedUnknot = Knot(loopedunknot);
 
 reidemeister2 = [1,4,2,1;2,4,3,3];
 Reidemeister2 = Knot(reidemeister2);
+
+Empty = Knot();
