@@ -5,7 +5,7 @@ All code submitted has been written without the use of AI tools.
 
 -- Approach 1 -- Object Oriented
 
-Braid.m, Knot.m, Path.m written by Arran, algorithm involves recording paths connected in smoothing operations, and counting the number of cycles in the full smoothing.
+Braid.m, Knot.m, Path.m written by Arran, algorithm involves recording paths connected in smoothing operations, and counting the number of cycles in the full smoothing. Braid algorithm invovles tracing through the diagram, labelling each crossing with relevant information on each pass.
 
 -- Approach 2 -- Functional
 
