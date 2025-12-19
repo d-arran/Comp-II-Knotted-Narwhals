@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+    \pic[braid/.cd, every strand/.style = {ultra thick}, strand 1/.style = {red}, strand 4/.style = {red}, strand 5/.style = {red}, gap = 0.1, crossing height = 8mm]
+    {braid={s_1 s_2 s_3 s_4^{-1} s_2 s_1^{-1}}};
+    \node[text=red] at (0,0.25) {\Large 1};
+    \node at (1,0.25) {\Large 2};
+    \node at (2,0.25) {\Large 3};
+    \node[text=red] at (3,0.25) {\Large 4};
+    \node[text=red] at (4,0.25) {\Large 5};
+    \node[text=red] at (0,-5.6) {\Large 4};
+    \node at (1,-5.6) {\Large 2};
+    \node at (2,-5.6) {\Large 3};
+    \node[text=red] at (3,-5.6) {\Large 5};
+    \node[text=red] at (4,-5.6) {\Large 1};
+\end{tikzpicture}
+
+\hspace{15mm}
+
+\begin{tikzpicture}
+     \pic[braid/.cd, every strand/.style = {ultra thick}, strand 2/.style = {blue}, gap = 0.1, crossing height = 8mm]
+    {braid={s_1 s_2 s_3 s_4^{-1} s_2 s_1^{-1}}};
+    \node at (0,0.25) {\Large 1};
+    \node[text=blue] at (1,0.25) {\Large 2};
+    \node at (2,0.25) {\Large 3};
+    \node at (3,0.25) {\Large 4};
+    \node at (4,0.25) {\Large 5};
+    \node at (0,-5.6) {\Large 4};
+    \node[text=blue] at (1,-5.6) {\Large 2};
+    \node at (2,-5.6) {\Large 3};
+    \node at (3,-5.6) {\Large 5};
+    \node at (4,-5.6) {\Large 1};
+\end{tikzpicture}
+
+\hspace{15mm}
+
+\begin{tikzpicture}
+    \pic[braid/.cd, every strand/.style = {ultra thick}, strand 3/.style = {green}, gap = 0.1, crossing height = 8mm]
+    {braid={s_1 s_2 s_3 s_4^{-1} s_2 s_1^{-1}}};
+    \node at (0,0.25) {\Large 1};
+    \node at (1,0.25) {\Large 2};
+    \node[text=green] at (2,0.25) {\Large 3};
+    \node at (3,0.25) {\Large 4};
+    \node at (4,0.25) {\Large 5};
+    \node at (0,-5.6) {\Large 4};
+    \node at (1,-5.6) {\Large 2};
+    \node[text=green] at (2,-5.6) {\Large 3};
+    \node at (3,-5.6) {\Large 5};
+    \node at (4,-5.6) {\Large 1};
+\end{tikzpicture}
